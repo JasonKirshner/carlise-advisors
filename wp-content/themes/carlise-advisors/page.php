@@ -10,7 +10,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package ruckus-base
+ * @package carlise-advisors-base
  */
 
 get_header();

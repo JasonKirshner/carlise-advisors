@@ -1,5 +1,5 @@
 {
-  "name": "ruckus-wordpress",
+  "name": "carlise-advisors-wordpress",
   "version": "0.0.1",
   "description": "A base theme for WordPress development",
   "main": "src/main.js",
@@ -14,17 +14,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/ruckusco/ruckus-wordpress.git"
+    "url": "git+ssh://git@gitlab.com/carlise-advisorsco/carlise-advisors-wordpress.git"
   },
   "keywords": [
     "wordpress"
   ],
-  "author": "Ruckus",
+  "author": "Carlise Advisors",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/rcukusco/ruckus-wordpress/issues"
+    "url": "https://gitlab.com/rcukusco/carlise-advisors-wordpress/issues"
   },
-  "homepage": "https://gitlab.com/ruckusco/ruckus-wordpress#readme",
+  "homepage": "https://gitlab.com/carlise-advisorsco/carlise-advisors-wordpress#readme",
   "husky": {
     "hooks": {
       "pre-commit": "node src/js/lib/sync-locks.js",
