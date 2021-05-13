@@ -1,0 +1,56 @@
+/* styles for notification-bar */
+
+.notification-bar {
+  background-color: var(--deep-ocean-blue);
+  position: fixed;
+  padding: 10px 0;
+  width: 100vw;
+  transform: translateY(-100%);
+  transition: transform var(--transition-timing) var(--transition-easing);
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+
+  @media (--lg-max) {
+    padding: 14px 0;
+  }
+
+  a {
+    color: var(--white);
+  }
+}
+
+.notification-bar.active {
+  transform: translateY(0);
+}
+
+.notification-bar__copy {
+  color: var(--white);
+  margin: 0;
+  text-align: left;
+
+  @media (--lg-max) {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+.notification-bar__close-btn::before {
+  content: "x";
+  color: var(--white);
+  font-weight: var(--font-weight-regular);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.notification-bar__close {
+  position: absolute;
+  right: 20px;
+  transform: translateY(-2px);
+
+  @media (--md-max) {
+    transform: translateY(-3px);
+  }
+}

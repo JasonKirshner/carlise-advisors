@@ -1,0 +1,95 @@
+{
+  "Aspect Ratio Pseudo Element": {
+    "prefix": "ar",
+    "body": [
+      "&::after {",
+      "  content: '';",
+      "  display: block;",
+      "  padding-bottom: $0;",
+      "}"
+    ],
+    "description": "Setup pseudo element for image aspect ratio",
+    "scope": "postcss"
+  },
+  "Shorthand position: relative;": {
+    "prefix": "pr",
+    "body": "position: relative;",
+    "description": "Quick position relative",
+    "scope": "postcss"
+  },
+  "Shorthand position: absolute;": {
+    "prefix": "pa",
+    "body": "position: absolute;",
+    "description": "Quick position absolute",
+    "scope": "postcss"
+  },
+  "Shorthand flex-direction: column;": {
+    "prefix": "fdc",
+    "body": "flex-direction: column;",
+    "description": "Quick flex-direction column",
+    "scope": "postcss"
+  },
+  "Container calc": {
+    "prefix": "container-calc",
+    "body": "calc((100vw - var(--container-width)) / 2 + var(--container-padding));",
+    "description": "Mimic container with this calc. Use it for, 'right', 'left', 'margin-right', 'margin-left' properties.",
+    "scope": "postcss"
+  },
+  "Print and Exit": {
+		"prefix": "eprint",
+		"body": [
+			"printf(\"<pre>%s</pre>\", print_r($0)); exit;"
+		],
+    "description": "Print some data into a <pre> tag and exit the script",
+    "scope": "php"
+  },
+  "If Setted": {
+    "prefix": "ifsetted",
+    "body": [
+      "<?php if(setted($$0)) : ?>",
+      "\t",
+      "<?php endif; ?>"
+    ],
+    "description": "Set up if setted statement",
+    "scope": "html"
+  },
+  "If Statement": {
+    "prefix": "ifstatement",
+    "body": [
+      "<?php if ($$0) : ?>",
+      "\t",
+      "<?php endif; ?>"
+    ],
+    "description": "Set up if statement",
+    "scope": "html"
+  },
+  "Foreach": {
+    "prefix": "foreach",
+    "body": [
+    "<?php foreach ($${1:array} as $${2:element}) : ?>",
+    "\t",
+    "<?php endforeach; ?>"
+    ],
+    "description": "Set up foreach statement",
+    "scope": "html"
+  },
+  "PHP Tag": {
+    "prefix": "php",
+    "body": "<?php $0 ?>",
+    "description": "Create php tags",
+    "scope": "html"
+  },
+  "Echo": {
+    "prefix": "echo",
+    "body": "<?= $0 ?>",
+    "description": "Create php echo tags",
+    "scope": "html"
+  },
+  "Image": {
+    "prefix": "image",
+    "body": "<?php the_module('image', array('image' => $0)); ?>",
+    "description": "Print image module",
+    "scope": "html"
+  }
+
+}

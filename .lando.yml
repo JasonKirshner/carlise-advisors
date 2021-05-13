@@ -1,0 +1,6 @@
+name: ruckus-wordpress
+recipe: pantheon
+config:
+  framework: wordpress
+  site: ruckus-wordpress
+  id: e1b6b4a0-909a-4d88-b415-82f27e842b99

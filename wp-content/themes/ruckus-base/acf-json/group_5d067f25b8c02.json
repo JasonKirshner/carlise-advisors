@@ -1,0 +1,103 @@
+{
+    "key": "group_5d067f25b8c02",
+    "title": "Developer Settings",
+    "fields": [
+        {
+            "key": "field_5d068034c96d2",
+            "label": "Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "This settings page is used specifically for web development. If you aren't a developer on this site, there's probably nothing here for you.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5d067f2d401e6",
+            "label": "Image Proxy",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5d067f3e401e7",
+            "label": "Proxy Images",
+            "name": "proxy_images",
+            "type": "true_false",
+            "instructions": "If checked, the theme will use images from the supplied URL. This is to allow developers to work on the site without needing to download images, which is useful for maintenance work on large sites. If you're doing new feature development, you probably don't want this checked.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5d067f89401e8",
+            "label": "Proxy Environment",
+            "name": "proxy_environment",
+            "type": "text",
+            "instructions": "The base uploads url for the desired image-source environment should be placed here. By default, the theme will try to use the \"dev\" environment from the associated Pantheon site. If this site is on Pantheon, this value is optional. Do not include the URL protocol (http:\/\/) with this",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5d067f3e401e7",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-development"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1560708087
+}

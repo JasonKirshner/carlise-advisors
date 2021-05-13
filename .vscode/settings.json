@@ -1,0 +1,34 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#000000",
+    "activityBar.foreground": "#fff",
+    "titleBar.activeBackground": "#000000",
+    "titleBar.activeForeground": "#fff"
+  },
+  "editor.formatOnType": true,
+  "files.associations": {
+    "*.css": "postcss",
+    ".stylelintrc": "jsonc"
+  },
+  "editor.tabSize": 2,
+  "explorer.compactFolders": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true,
+    "source.fixAll.eslint": true
+  },
+  "files.insertFinalNewline": true,
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "[php]": {
+    "editor.formatOnSave": true
+  },
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  },
+  "emmet.syntaxProfiles": {
+    "postcss": "css"
+  }
+}

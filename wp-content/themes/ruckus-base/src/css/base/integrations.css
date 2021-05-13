@@ -1,0 +1,31 @@
+/* Bamboo */
+
+#BambooHR {
+  div, a, span {
+    color: var(--white);
+  }
+
+  h2 {
+    color: var(--white);
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: var(--regular);
+
+    @media (--md-max) {
+      font-size: 35px;
+      line-height: 40px;
+    }
+  }
+
+  .BambooHR-ATS-Department-Header {
+    @extend .h4;
+  }
+}
+
+.cn-button.cookie-button {
+  background-color: var(--seafoam);
+}
+
+body img.gform_ajax_spinner {
+  display: none !important;
+}

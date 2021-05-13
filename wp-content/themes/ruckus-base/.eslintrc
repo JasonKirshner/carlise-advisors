@@ -1,0 +1,43 @@
+{
+  "ignorePatterns": [
+    "node_modules/",
+    "tasks/"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "standard"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
+  },
+  "rules": {
+    "no-undef": [
+      "error",
+      {
+        "typeof": true
+      }
+    ],
+    "no-duplicate-imports": "error",
+    "block-scoped-var": "error",
+    "camelcase": "error",
+    "no-unused-vars": [
+      "error",
+      {
+        "varsIgnorePattern": "plyr|[sS]wiper|loadImg",
+        "argsIgnorePattern": "^el$"
+      }
+    ],
+    "quotes": ["error", "single", { "allowTemplateLiterals": true }]
+  }
+}

@@ -100,7 +100,7 @@ wp.mediaWidgets = ( function( $ ) {
 		 *
 		 * @since 4.9.0
 		 *
-		 * @param {Object} options - Options.
+		 * @param {object} options - Options.
 		 * @return {void}
 		 */
 		initialize: function( options ) {
@@ -1320,15 +1320,9 @@ wp.mediaWidgets = ( function( $ ) {
 			});
 
 			// Accessibility mode.
-			if ( document.readyState === 'complete' ) {
-				// Page is fully loaded.
+			$( window ).on( 'load', function() {
 				component.setupAccessibleMode();
-			} else {
-				// Page is still loading.
-				$( window ).on( 'load', function() {
-					component.setupAccessibleMode();
-				});
-			}
+			});
 		});
 	};
 

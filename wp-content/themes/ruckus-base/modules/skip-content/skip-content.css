@@ -1,0 +1,14 @@
+.skip-link {
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  opacity: 0;
+  transition: transform var(--transition-timing) var(--transition-easing), opacity var(--transition-timing) ease;
+
+  &:focus,
+  &:active {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}

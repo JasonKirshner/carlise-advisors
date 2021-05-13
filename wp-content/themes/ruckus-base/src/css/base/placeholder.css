@@ -1,0 +1,10 @@
+/* Placeholder styles - to be removed for launch */
+
+.placeholder {
+  background-color: #7395bb;
+  padding: 50px 0;
+  text-align: center;
+  margin: 15px auto;
+  width: calc(100% - 30px);
+  border-radius: 3px;
+}

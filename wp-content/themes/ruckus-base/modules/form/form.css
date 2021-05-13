@@ -1,0 +1,278 @@
+/* styles for form */
+
+.form {
+  width: 100%;
+
+  .footer & {
+    .validation_error {
+      display: none;
+    }
+  }
+
+  &--resource-mobile {
+    background-color: var(--dark-grey);
+
+    @media (--xl) {
+      display: none;
+    }
+  }
+}
+
+.form-wrapper {
+  .form--resource & {
+    padding: 6rem 6rem;
+    border-radius: 14px;
+    border: 2px solid var(--green);
+    background-color: var(--dark-grey-blue);
+  }
+}
+
+.form-title {
+  margin: 0;
+  margin-bottom: 4rem;
+  color: var(--white);
+}
+
+.gform_fields {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gfield {
+  &:not(:first-child) {
+    margin-top: 2rem;
+  }
+}
+
+.gfield_label {
+  @extend .uppercase;
+
+  @extend .input-label;
+
+  color: var(--shell);
+}
+
+.gfield_select,
+.form .address_country select,
+.ginput_container input,
+.ginput_container textarea {
+  @extend .input-label;
+
+  color: var(--shell);
+  font-family: var(--heading-font);
+  font-size: 16px;
+  letter-spacing: 0.64px;
+  border: solid 1px var(--light-grey-blue);
+  border-radius: 6px;
+  padding: 1.6rem 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  background-color: var(--charcoal);
+
+  .gfield_error & {
+    border: solid 2px var(--error-red);
+  }
+
+  &:focus {
+    border: solid 2px var(--go-green);
+  }
+
+  .form--dark & {
+    background-color: var(--charcoal);
+    color: var(--white);
+  }
+}
+
+.form .address_country select {
+  @extend .input-label;
+
+  color: var(--light-grey-blue);
+}
+
+.gselect_container {
+  position: relative;
+}
+
+.gfield_select {
+  appearance: none;
+  border-radius: 6px;
+  background-color: transparent;
+  margin-top: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.gfield_select_arrow {
+  position: absolute;
+  width: 15px;
+  top: 50%;
+  right: 3rem;
+  transform: translateY(-50%) rotate(180deg);
+  z-index: 1;
+}
+
+.gform_footer {
+  display: flex;
+  justify-content: center;
+}
+
+.gform_button {
+  @extend .button;
+
+  cursor: pointer;
+  appearance: none;
+  margin: 0;
+  border: none;
+  width: 100%;
+  margin-top: 2rem;
+
+  @media (--lg-max) {
+    max-width: 241px;
+  }
+
+  &[type="submit"] {
+    margin-top: 35px;
+    max-width: initial;
+  }
+
+  .footer &[type="submit"] {
+    margin-top: 0;
+  }
+}
+
+.gform_validation_container {
+  display: none !important;
+  position: absolute !important;
+  left: -9000px;
+}
+
+.ginput_container_select {
+  z-index: 2;
+  position: relative;
+  margin-top: 1rem;
+  background-color: var(--white);
+}
+
+.validation_message {
+  font-family: var(--heading-font);
+  color: var(--salmon);
+  font-weight: var(--bold);
+}
+
+.validation_error {
+  display: none;
+}
+
+.gfield_radio {
+  display: flex;
+  letter-spacing: none;
+  padding: 0;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.gfield_radio li {
+  list-style: none;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.gfield_radio li input {
+  height: 15px;
+  width: 15px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  cursor: pointer;
+  appearance: none;
+  border-radius: 8px;
+  border: 2px solid var(--seafoam);
+
+  &:checked {
+    background-color: var(--seafoam);
+  }
+}
+
+.gfield_radio li label {
+  cursor: pointer;
+  margin-left: 14px;
+
+  .form--dark & {
+    color: var(--shell);
+  }
+}
+
+.gfield_checkbox {
+  display: flex;
+  letter-spacing: none;
+  padding: 0;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.gfield_checkbox li {
+  list-style: none;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.gfield_checkbox li input {
+  height: 15px;
+  width: 15px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  cursor: pointer;
+  appearance: none;
+  border-radius: 8px;
+  border: 2px solid var(--seafoam);
+
+  &:checked {
+    background-color: var(--seafoam);
+
+    &::after {
+      content: '';
+      z-index: 2;
+      position: absolute;
+      height: 6px;
+      width: 3px;
+      top: 0.6px;
+      left: 3px;
+      transform: rotate(45deg);
+      border-bottom: 2px solid var(--white);
+      border-right: 2px solid var(--white);
+    }
+  }
+}
+
+.gfield_checkbox li label {
+  cursor: pointer;
+  margin-left: 14px;
+
+  .form--dark & {
+    color: var(--shell);
+  }
+}
+
+.hidden_sub_label {
+  display: none;
+}
+
+.gform_confirmation_message {
+  @extend .b1;
+
+  color: var(--white);
+
+  a {
+    color: var(--seafoam);
+  }
+}

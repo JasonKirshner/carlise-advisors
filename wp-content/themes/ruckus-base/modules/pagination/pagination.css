@@ -1,0 +1,50 @@
+/* styles for pagination */
+
+.pagination {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+  background-color: var(--dark-grey);
+}
+
+.pagination span.current {
+  @extend .b1--bold;
+
+  opacity: 1;
+}
+
+.pagination a,
+.pagination span {
+  text-decoration: none;
+  color: var(--white);
+  margin: 0 0 0 2rem;
+  opacity: 0.4;
+
+  @extend .b1;
+}
+
+.pagination a:hover {
+  cursor: pointer;
+}
+
+.page-numbers {
+  &.next {
+    margin: 0 0 0 2rem;
+  }
+
+  &.prev {
+    margin: 0 1rem 0 0;
+  }
+}
+
+.pagination__arrow {
+  width: 0.7rem;
+  height: 2rem;
+
+  svg {
+    width: 0.7rem;
+    height: 2rem;
+  }
+}

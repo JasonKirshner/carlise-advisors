@@ -1,0 +1,41 @@
+/* styles for the social-icons module go in this file */
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+
+  &--mobile {
+    margin-top: 50px;
+    margin-bottom: 60px;
+
+    @media (--lg) {
+      display: none;
+    }
+  }
+}
+
+.social-icons__social {
+  color: var(--light-grey-blue);
+  transition: all var(--transition-timing) var(--transition-easing);
+
+  &:not(:last-of-type) {
+    margin-right: 12px;
+  }
+
+  &:hover {
+    color: var(--white);
+  }
+}
+
+.social-icons__svg {
+  height: 21px;
+  width: 25px;
+
+  svg {
+    height: 21px;
+    width: 25px;
+  }
+}
