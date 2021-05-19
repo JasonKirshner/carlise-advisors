@@ -488,24 +488,24 @@ function fileupload_proxy_btn($content, $field, $value, $lead_id, $form_id)
  *
  * @global int $content_width
  */
-function theme_name_content_width()
+function carlise_advisors_content_width()
 {
   // This variable is intended to be overruled from themes.
   // Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
   // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
-  $GLOBALS['content_width'] = apply_filters('theme_name_content_width', 640);
+  $GLOBALS['content_width'] = apply_filters('carlise_advisors_content_width', 640);
 }
-add_action('after_setup_theme', 'theme_name_content_width', 0);
+add_action('after_setup_theme', 'carlise_advisors_content_width', 0);
 
 /**
  * Enqueue scripts and styles.
  */
-function theme_name_scripts()
+function carlise_advisors_scripts()
 {
-  wp_enqueue_style('theme-name-style', get_template_directory_uri() . '/assets/main.min.css');
-  wp_enqueue_script('theme-name-js', get_template_directory_uri() . '/assets/main.min.js', null, 1, true);
+  wp_enqueue_style('carlise-advisors-style', get_template_directory_uri() . '/assets/main.min.css');
+  wp_enqueue_script('carlise-advisors-js', get_template_directory_uri() . '/assets/main.min.js', null, 1, true);
 }
-add_action('wp_enqueue_scripts', 'theme_name_scripts');
+add_action('wp_enqueue_scripts', 'carlise_advisors_scripts');
 
 function svg_enqueue_scripts($hook)
 {
@@ -533,7 +533,7 @@ function rewrite_uploads($upload_url_path)
   if (!$enable_proxy)
     return;
 
-  $site_name = $_SERVER['PANTHEON_SITE_NAME'] ?? 'theme-name';
+  $site_name = $_SERVER['PANTHEON_SITE_NAME'] ?? 'carlise-advisors';
   $proxy_env = get_field('proxy_environment') ?? "develop-$site_name.pantheonsite.io/wp-content/uploads";
   $removals = array(
     'https://',

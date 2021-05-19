@@ -1,14 +1,14 @@
 <?php
 
 /**
- * theme-name functions and definitions
+ * carlise-advisors functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package theme-name
+ * @package carlise-advisors
  */
 
-if (!function_exists('theme_name_setup')) :
+if (!function_exists('carlise_advisors_setup')) :
   /**
    * Sets up theme defaults and registers support for various WordPress features.
    *
@@ -16,15 +16,15 @@ if (!function_exists('theme_name_setup')) :
    * runs before the init hook. The init hook is too late for some features, such
    * as indicating support for post thumbnails.
    */
-  function theme_name_setup()
+  function carlise_advisors_setup()
   {
     /*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on theme-name, use a find and replace
-		 * to change 'theme-name' to the name of your theme in all the template files.
+		 * If you're building a theme based on carlise-advisors, use a find and replace
+		 * to change 'carlise-advisors' to the name of your theme in all the template files.
 		 */
-    load_theme_textdomain('theme-name', get_template_directory() . '/languages');
+    load_theme_textdomain('carlise-advisors', get_template_directory() . '/languages');
 
     // Add default posts and comments RSS feed links to head.
     add_theme_support('automatic-feed-links');
@@ -46,8 +46,8 @@ if (!function_exists('theme_name_setup')) :
 
     // This theme uses wp_nav_menu() in one location.
     register_nav_menus(array(
-      'primary' => esc_html__('Primary', 'theme-name'),
-      'footer-menu' => esc_html__('Footer Menu', 'theme-name'),
+      'primary' => esc_html__('Primary', 'carlise-advisors'),
+      'footer-menu' => esc_html__('Footer Menu', 'carlise-advisors'),
     ));
 
     /*
@@ -76,4 +76,4 @@ if (!function_exists('theme_name_setup')) :
     require_once 'utils/options-pages.php';
   }
 endif;
-add_action('after_setup_theme', 'theme_name_setup');
+add_action('after_setup_theme', 'carlise_advisors_setup');
