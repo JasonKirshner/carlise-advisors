@@ -11,3 +11,16 @@
     padding-bottom: calc(384 / 591 * 100%);
   }
 }
+
+/*
+.example-image-class{
+type in 'pr' and hit enter -> position: relative;
+add these lines:   width: 100%;
+                   max-width: 591px; == width of the image
+type in 'ar' ->   &::after {
+                    content: "";
+                    display: block;
+                    padding-bottom: calc(384 / 591 * 100%);  == update with dimensions of image
+                  }
+}
+*/
