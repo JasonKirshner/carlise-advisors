@@ -1,8 +1,12 @@
 <section class="image-copy<?= setted($class) ? " $class" : ""; ?> placeholder" data-module="image-copy">
   <h2 class="module-name">image-copy</h2>
   <h3><?= $project_title ?></h3>
-  <?php the_module('image', array('image' => $project_icon)) ?>
-  <?php the_module('image', array('image' => $project_image)) ?>
+  <div class="image-copy__image"> 
+    <?php the_module('image', array('image' => $project_icon, 'class' => 'image--relative')) ?>
+  </div>
+  <div class="image-copy__image">
+    <?php the_module('image', array('image' => $project_image)) ?>
+  </div>
   <h3><?= $project_subtitle_1 ?></h3>
   <h4><?= $project_blurb_1 ?></h4>
   <h3><?= $project_subtitle_2 ?></h3>
