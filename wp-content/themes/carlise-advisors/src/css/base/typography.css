@@ -1,201 +1,81 @@
 @import url("https://use.typekit.net/rbi7jwf.css");
 
-p, h1, h2, h3 {
-  color: var(--charcoal);
-}
 
-.h1, .h2, .h3, .h4 {
+
+.h1, .h2, .h3, .p, .p1, .p2, .p3, .input-error, .input-label {
   font-family: var(--heading-font);
 }
 
-.b1, .b2, .input-label, .attribution-font {
-  font-family: var(--body-font);
-}
+
 
 .h1 {
-  font-size: 60px;
+  font-size: 48px;
   line-height: 65px;
-  letter-spacing: 1.2px;
-  font-weight: var(--extra-bold);
-
-  &--medium {
-    font-weight: var(--medium);
-  }
+  font-weight: var(--bold);
 
   @media (--md-max) {
     font-size: 30px;
     line-height: 35px;
-    letter-spacing: 0.6px;
   }
 }
 
 .h2 {
-  font-size: 40px;
-  line-height: 45px;
-  font-weight: var(--bold);
-  letter-spacing: 0.8px;
+  font-size: 43px;
+  font-weight: var(--regualr);
 
   @media (--md-max) {
     font-size: 25px;
     line-height: 29px;
-    letter-spacing: 0.5px;
   }
 }
 
 .h3 {
-  font-size: 26px;
+  font-size: 32px;
   line-height: 30px;
-  font-weight: var(--bold);
-  letter-spacing: 0.52px;
+  font-weight: var(--medium);
 
   @media (--md-max) {
     font-size: 22px;
     line-height: 25px;
-    letter-spacing: 0.44px;
   }
 }
-
-.h4 {
+.p {
+  font-size: 24px;
+  
+  @media (--md-max){
+    font-size: 18px;
+  }
+}
+.p1{
+  font-size: 24px;
+  font-weight: var(--medium);
+  
+  @media (--md-max){
+    font-size: 18px;
+  }
+  
+}
+.p2{
   font-size: 20px;
-  line-height: 24px;
-  font-weight: var(--medium);
-  letter-spacing: 0.4px;
 
-  &--small {
+  @media (--md-max){
     font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.32px;
-    font-weight: var(--medium);
-  }
-
-  @media (--md-max) {
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.32px;
   }
 }
-
-.b1 {
-  font-size: 17px;
-  line-height: 23px;
-  font-weight: var(--bold);
-  letter-spacing: normal;
-
-  @media (--md-max) {
-    font-size: 14px;
-    line-height: 20px;
-  }
-
-  &--extra-bold {
-    font-weight: var(--extra-bold);
-  }
-
-  &--md {
-    font-weight: var(--extra-bold);
-    font-size: 14px;
-    line-height: 1.36;
-    letter-spacing: 0.28px;
-  }
-
-  &--small {
-    font-weight: var(--extra-bold);
-    font-size: 10px;
-    line-height: 14px;
-    letter-spacing: 0.57px;
-  }
-}
-
-.b2 {
-  font-size: 17px;
-  line-height: 23px;
-  font-weight: var(--regular);
-  letter-spacing: normal;
-
-  &--small {
-    font-size: 15px;
-    line-height: 19px;
-  }
-
-  &--x-small {
-    font-size: 13px;
-  }
-
-  &--light {
-    font-weight: var(--light);
-  }
-
-  &--semi-bold {
-    @media (--md-max) {
-      font-weight: var(--semi-bold);
-    }
-  }
-
-  @media (--md-max) {
-    font-size: 14px;
-    line-height: 20px;
-  }
-}
-
-.attribution-font {
+.p3{
   font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 1.92px;
-  font-weight: var(--medium);
-
-  b,.bold,strong {
-    font-family: var(--body-font);
-    font-weight: 400;
-  }
-
-  @media (--md-max) {
-    font-size: 14px;
-    letter-spacing: 1.68px;
+  @media (--md-max){
+    font-size: 12px
   }
 }
 
-.label-font {
-  /* this is traditionally used for the button values */
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.7px;
-  font-weight: 500;
-  text-transform: uppercase;
-
-  @media (--md-max) {
-    letter-spacing: 1.68px;
-  }
-}
-
-.validation-message {
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 1.46;
-  letter-spacing: 0.33px;
+.input-error {
+  font-size: 12px;
+  color: var(--red);
 }
 
 .input-label {
-  font-size: 13px;
-  font-weight: var(--semi-bold);
-  line-height: 1.38;
-  letter-spacing: 0.26px;
-
-  &--regular {
-    font-weight: var(--regular);
-  }
-
-  &--bold {
-    font-weight: var(--bold);
-  }
-}
-
-.text-center {
-  text-align: center;
-}
-
-em, .italic {
+  font-size: 18px;
   font-style: italic;
 }
 
-.uppercase {
-  text-transform: uppercase;
-}

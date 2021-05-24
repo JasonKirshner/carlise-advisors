@@ -5,6 +5,6 @@
  */
 get_header();
 
-the_module('style-guide');
+the_module('style-guide', array("class" => "cum" ));
 
 get_footer();

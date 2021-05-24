@@ -2,19 +2,14 @@
   /* Color Palette */
   --white: #fff;
   --black: #000;
-  --blue-1: #121339;
-  --blue-2: #1b1464;
-  --green: #00bd9b;
-  --charcoal: #23262b;
-  --gray: #595f6f;
-  --light-gray: #eaf0fa;
-  --red: #e63500;
-  --gray-3: #707070;
-  --gray-4: #a7a7a7;
-
+  --cum: #f2f1e9;
+  --lavender: #eae9f2;
+  --plum: #938fa6;
+  --white-opaque: rgba(241, 238, 240, 0.75);
+  --red: #ff0000;
   /* Typography */
-  --heading-font: 'Manrope', sans-serif;
-  --body-font: 'Manrope', sans-serif;
+  --heading-font: 'Rubik', sans-serif;
+  --body-font: 'Rubik', sans-serif;
 
   /* Font Weight */
   --light: 300;
@@ -35,71 +30,3 @@
   --transition-easing-2: cubic-bezier(0.61, 0.265, 0.01, 0.965);
 }
 
-.color-swatches {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  & .swatch {
-    height: 10rem;
-    width: 10rem;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-    position: relative;
-
-    &::after {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translateY(100%);
-    }
-
-    &:nth-of-type(1) {
-      background-color: var(--light-white);
-
-      &::after {
-        content: 'light white';
-      }
-    }
-
-    &:nth-of-type(2) {
-      background-color: var(--dark-blue);
-
-      &::after {
-        content: 'dark blue';
-      }
-    }
-
-    &:nth-of-type(3) {
-      background-color: var(--baby-blue);
-
-      &::after {
-        content: 'baby blue';
-      }
-    }
-
-    &:nth-of-type(4) {
-      background-color: var(--bahama-blue);
-
-      &::after {
-        content: 'bahama blue';
-      }
-    }
-
-    &:nth-of-type(5) {
-      background-color: var(--sky-blue);
-
-      &::after {
-        content: 'sky blue';
-      }
-    }
-
-    &:nth-of-type(6) {
-      background-color: var(--blue);
-
-      &::after {
-        content: 'blue';
-      }
-    }
-  }
-}

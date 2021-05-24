@@ -1,1 +1,70 @@
 /* styles for style-guide */
+
+.color-swatches {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  & .swatch {
+    height: 10rem;
+    width: 10rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translateY(100%);
+    }
+
+    &:nth-of-type(1) {
+      background-color: var(--cum);
+
+      &::after {
+        content: 'cum';
+      }
+    }
+
+    &:nth-of-type(2) {
+      background-color: var(--dark-blue);
+
+      &::after {
+        content: 'dark blue';
+      }
+    }
+
+    &:nth-of-type(3) {
+      background-color: var(--baby-blue);
+
+      &::after {
+        content: 'baby blue';
+      }
+    }
+
+    &:nth-of-type(4) {
+      background-color: var(--bahama-blue);
+
+      &::after {
+        content: 'bahama blue';
+      }
+    }
+
+    &:nth-of-type(5) {
+      background-color: var(--sky-blue);
+
+      &::after {
+        content: 'sky blue';
+      }
+    }
+
+    &:nth-of-type(6) {
+      background-color: var(--blue);
+
+      &::after {
+        content: 'blue';
+      }
+    }
+  }
+}
