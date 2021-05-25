@@ -1,1 +1,14 @@
 /* styles for the footer-cta module go in this file */
+
+.footer-cta {
+  background-color: var(--cum);
+  padding: 10px 0 40px 0;
+}
+
+.footer-cta-name {
+  text-align: center;
+}
+
+.footer-button {
+  text-align: center;
+}
