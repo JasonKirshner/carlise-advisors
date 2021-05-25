@@ -1,14 +1,10 @@
 @import url("https://use.typekit.net/rbi7jwf.css");
 
-
-
-.h1, .h2, .h3, .p, .p1, .p2, .p3, .input-error, .input-label {
+h1, h2, h3, p, .p1, .p2, .p3, .input-error, .input-label {
   font-family: var(--heading-font);
 }
 
-
-
-.h1 {
+h1 {
   font-size: 48px;
   line-height: 65px;
   font-weight: var(--bold);
@@ -19,7 +15,7 @@
   }
 }
 
-.h2 {
+h2 {
   font-size: 43px;
   font-weight: var(--regualr);
 
@@ -29,7 +25,7 @@
   }
 }
 
-.h3 {
+h3 {
   font-size: 32px;
   line-height: 30px;
   font-weight: var(--medium);
@@ -39,33 +35,37 @@
     line-height: 25px;
   }
 }
-.p {
+
+p {
   font-size: 24px;
-  
-  @media (--md-max){
+
+  @media (--md-max) {
     font-size: 18px;
   }
 }
-.p1{
+
+.p1 {
   font-size: 24px;
   font-weight: var(--medium);
-  
-  @media (--md-max){
+
+  @media (--md-max) {
     font-size: 18px;
   }
-  
 }
-.p2{
+
+.p2 {
   font-size: 20px;
 
-  @media (--md-max){
+  @media (--md-max) {
     font-size: 16px;
   }
 }
-.p3{
+
+.p3 {
   font-size: 16px;
-  @media (--md-max){
-    font-size: 12px
+
+  @media (--md-max) {
+    font-size: 12px;
   }
 }
 
@@ -78,4 +78,3 @@
   font-size: 18px;
   font-style: italic;
 }
-
