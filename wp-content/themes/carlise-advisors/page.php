@@ -15,6 +15,6 @@
 
 get_header();
 the_module('wysiwyg', array(
-	'content' => get_the_content();
+	'content' => get_the_content()
 ));
 get_footer();
