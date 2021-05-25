@@ -1,1 +1,17 @@
 /* button styles show here and should be based on a project styleguide */
+
+button {
+  width: 224px;
+  height: 74.7px;
+  padding: 27px 60px 29.7px;
+  border-radius: 50px;
+  background-color: #938fa6;
+  color: #fff;
+  border-style: none;
+}
+
+button:active {
+  color: #938fa6;
+  background-color: #fff;
+  border: solid 4px #938fa6;
+}
