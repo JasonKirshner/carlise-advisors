@@ -1,1 +1,51 @@
 /* styles for the copy-grid module go in this file */
+
+.copy-grid {
+  background-color: var(--cum);
+  padding: 10px 0 40px 0;
+}
+
+.module-name {
+  text-align: center;
+}
+
+.module-name::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  padding-top: 12px; /* offset between line and module title */
+  border-bottom: 4px solid var(--plum);
+}
+
+.services-icon {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 83px;
+
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: calc(83 / 78 * 100%);
+  }
+}
+
+.copy-grid-table {
+  padding: 0 10% 0 10%;
+}
+
+.subheading {
+  padding: 0 15px 0 15px;
+  max-width: calc(80% / var(--numServices));
+  text-align: left;
+  vertical-align: bottom;
+}
+
+.blurb {
+  padding: 0 15px 0 15px;
+  max-width: calc(80% / var(--numServices));
+  text-align: left;
+  vertical-align: top;
+}

@@ -44,6 +44,5 @@ the_module('upgrade-tech', array(
   'upgrade_blurb' => get_field('upgrade_blurb')
 ));
 the_module('footer-cta');
-the_module('footer');
 
 get_footer();
