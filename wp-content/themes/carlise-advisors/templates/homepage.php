@@ -11,6 +11,7 @@ the_module('image-copy', array(
   'project_icon' => get_field('project_icon'), 
   'project_title' => get_field('project_title'),
   'project_image' => get_field('project_image'), 
+  'project_subtitle' => get_field('project_subtitle'),
   'project_subtitle_1' => get_field('project_subtitle_1'),
   'project_blurb_1' => get_field('project_blurb_1'),
   'project_subtitle_2' => get_field('project_subtitle_2'),
