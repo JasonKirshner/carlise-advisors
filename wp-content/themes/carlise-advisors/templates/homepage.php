@@ -43,6 +43,10 @@ the_module('upgrade-tech', array(
   'upgrade_subtitle' => get_field('upgrade_subtitle'), 
   'upgrade_blurb' => get_field('upgrade_blurb')
 ));
-the_module('footer-cta');
+the_module('footer-cta', array(
+  'footer_cta_title' => get_field('footer_cta_title')
+  //'footer_button' => get_field('footer_button')
+  
+));
 
 get_footer();
