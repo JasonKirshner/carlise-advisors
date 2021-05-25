@@ -1,9 +1,15 @@
 /* styles for the image-copy module go in this file */
 
+/* image copy sections */
+
 .image-copy__project_icon {
   position: relative;
   width: 100%;
   max-width: 101px;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  justify-self: center;
 
   &::after {
     content: "";
@@ -16,6 +22,10 @@
   position: relative;
   width: 100%;
   max-width: 86px;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  justify-self: center;
 
   &::after {
     content: "";
@@ -28,6 +38,11 @@
   position: relative;
   width: 100%;
   max-width: 83px;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  justify-self: center;
+  background-color: --cum;
 
   &::after {
     content: "";
@@ -40,6 +55,9 @@
   position: relative;
   width: 100%;
   max-width: 591px;
+  grid-row-start: 3;
+  grid-column-start: 2;
+  justify-self: center;
 
   &::after {
     content: "";
@@ -52,6 +70,9 @@
   position: relative;
   width: 100%;
   max-width: 570px;
+  grid-row-start: 3;
+  grid-column-start: 2;
+  justify-self: center;
 
   &::after {
     content: "";
@@ -64,6 +85,9 @@
   position: relative;
   width: 100%;
   max-width: 618px;
+  grid-row-start: 3;
+  grid-column-start: 3;
+  justify-self: center;
 
   &::after {
     content: "";
@@ -71,6 +95,68 @@
     padding-bottom: calc(373 / 618 * 100%);
   }
 }
+
+/* grid */
+
+.image-copy-container {
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-rows: auto auto auto;
+  column-gap: 25px;
+  padding-top: 25px;
+  padding-bottom: 100px;
+}
+
+h2 {
+  position: relative;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  justify-self: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    height: 1px;
+    width: 180px;
+    left: calc(50% - 90px);
+    border-bottom: gray solid 5px;
+  }
+}
+
+.project-text {
+  grid-row-start: 3;
+  grid-column-start: 3;
+}
+
+.prepare-text {
+  grid-row-start: 3;
+  grid-column-start: 3;
+  justify-self: center;
+}
+
+.call-center-text {
+  grid-row-start: 3;
+  grid-column-start: 2;
+  justify-self: center;
+}
+
+.call-center {
+  background-color: var(--cum);
+}
+
+/* image-copy project containers */
+
+/* .project-container {
+  display: grid;
+} */
+
+/* .project-container-content {
+}
+
+.project-container-content-text {
+} */
 
 /*
 .example-image-class{
