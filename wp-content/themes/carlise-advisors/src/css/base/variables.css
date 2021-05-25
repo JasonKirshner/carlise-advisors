@@ -6,10 +6,11 @@
   --lavender: #eae9f2;
   --plum: #938fa6;
   --white-opaque: rgba(241, 238, 240, 0.75);
-  --red: #ff0000;
+  --red: #f00;
+
   /* Typography */
-  --heading-font: 'Rubik', sans-serif;
-  --body-font: 'Rubik', sans-serif;
+  --heading-font: "Rubik", sans-serif;
+  --body-font: "Rubik", sans-serif;
 
   /* Font Weight */
   --light: 300;
@@ -29,4 +30,3 @@
   --transition-easing: cubic-bezier(0.06, 0.305, 0, 1);
   --transition-easing-2: cubic-bezier(0.61, 0.265, 0.01, 0.965);
 }
-

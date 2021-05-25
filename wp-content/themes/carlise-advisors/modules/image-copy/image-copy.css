@@ -1,6 +1,42 @@
 /* styles for the image-copy module go in this file */
 
-.image-copy__image {
+.image-copy__project_icon {
+  position: relative;
+  width: 100%;
+  max-width: 101px;
+
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: calc(86 / 101 * 100%);
+  }
+}
+
+.image-copy__prepare_icon {
+  position: relative;
+  width: 100%;
+  max-width: 86px;
+
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: calc(81 / 86 * 100%);
+  }
+}
+
+.image-copy__call_center_icon {
+  position: relative;
+  width: 100%;
+  max-width: 83px;
+
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: calc(81 / 83 * 100%);
+  }
+}
+
+.image-copy__project {
   position: relative;
   width: 100%;
   max-width: 591px;
@@ -9,6 +45,30 @@
     content: "";
     display: block;
     padding-bottom: calc(384 / 591 * 100%);
+  }
+}
+
+.image-copy__prepare {
+  position: relative;
+  width: 100%;
+  max-width: 570px;
+
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: calc(332 / 570 * 100%);
+  }
+}
+
+.image-copy__call_center {
+  position: relative;
+  width: 100%;
+  max-width: 618px;
+
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: calc(373 / 618 * 100%);
   }
 }
 
