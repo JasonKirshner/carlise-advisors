@@ -1,1 +1,10 @@
 /* styles for error-404 */
+
+.error-404 {
+  background-color: var(--lavender);
+  padding: 10px 0 40px 0;
+}
+
+.error {
+  text-align: center;
+}
