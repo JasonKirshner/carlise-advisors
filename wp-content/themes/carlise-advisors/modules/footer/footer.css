@@ -1,13 +1,14 @@
 /* styles for the footer module go in this file */
 
 .footer {
-  padding: 10px 15%;
+  padding: 10px 0;
   background-color: var(--lavender);
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
   align-items: center;
 }
 
@@ -15,6 +16,7 @@
   position: relative;
   width: 100%;
   max-height: 83px;
+  min-width: 125px;
   max-width: 252px;
 
   &::after {
@@ -26,6 +28,8 @@
 
 .contact-info {
   display: flex;
+  flex-flow: row wrap;
   gap: 20px;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: left;
 }
