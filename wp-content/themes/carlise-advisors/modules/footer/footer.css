@@ -1,11 +1,14 @@
 /* styles for the footer module go in this file */
 
 .footer {
-  padding: 10px 15% 10px 15%;
+  padding: 10px 15%;
   background-color: var(--lavender);
-  display: grid;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  grid-template-columns: 25% auto;
 }
 
 .footer__image {
@@ -22,36 +25,7 @@
 }
 
 .contact-info {
-  display: inline-grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto;
-  grid-template-areas:
-
-    "ch ah"
-    "ph ad"
-    "ea ea";
-  vertical-align: top;
-  margin-top: -30px;
-}
-
-.contact-heading {
-  grid-area: "ch";
-  margin-bottom: -25px;
-}
-
-.address-heading {
-  grid-area: "ah";
-  margin-bottom: -25px;
-}
-
-.phone {
-  grid-area: "ph";
-}
-
-.address {
-  grid-area: "ad";
-}
-
-.email {
-  grid-area: "ea";
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
 }
