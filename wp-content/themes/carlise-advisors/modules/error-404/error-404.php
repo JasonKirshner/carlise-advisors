@@ -5,8 +5,7 @@
     <h3> Son You Done Fucked Up </h3> 
     <div class="404-button"> <?php the_module('button', array(
     'button' => $footer_button,
-    'use_button_tag' => true, // default false - optional
-    'link' => 'http://carlise-advisors.lndo.site/', // required if $tag == 'a'
+    'link' => home_url(), // required if $tag == 'a'
     'value' => 'Home', // required 
     ));?> 
     </div>
