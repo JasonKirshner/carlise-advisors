@@ -1,6 +1,5 @@
 @import url("https://use.typekit.net/rbi7jwf.css");
 
-<<<<<<< HEAD
 h1,
 h2,
 h3,
@@ -10,9 +9,6 @@ p,
 .p3,
 .input-error,
 .input-label {
-=======
-h1, h2, h3, p, .p1, .p2, .p3, .input-error, .input-label {
->>>>>>> d1801cd6c80306d88bb04515be497ea30f019af0
   font-family: var(--heading-font);
 }
 
