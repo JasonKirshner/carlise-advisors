@@ -1,8 +1,15 @@
 <section class="error-404<?= setted($class) ? " $class" : ""; ?>" data-module="error-404">
 
 <table class='404-grid-table'>
-    <tr><td> <h1>4 0 4 </h1>
-    <h2> Son You Done Fucked Up </h2> </td>
+    <tr><td class="error"> <h1>4 0 4 </h1>
+    <h3> Son You Done Fucked Up </h3> 
+    <div class="404-button"> <?php the_module('button', array(
+    'button' => $footer_button,
+    'link' => home_url(), // required if $tag == 'a'
+    'value' => 'Home', // required 
+    ));?> 
+    </div>
+    </td>
     <td> <div class='404-image'>
     <?php the_module('image', array('image' => $four_image)) ?> 
     </div> 
