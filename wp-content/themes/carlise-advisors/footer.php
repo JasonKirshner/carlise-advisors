@@ -17,9 +17,7 @@
   'footer_logo' => get_field('footer_logo'),
   'footer_contact_us' => get_field('footer_contact_us'),
   'footer_contact_sales' => get_field('footer_contact_sales'),
-  'footer_contact_sales_number' => get_field('footer_contact_sales_number'),
   'footer_contact_support' => get_field('footer_contact_support'),
-  'footer_contact_support_number' => get_field('footer_contact_support_number'),
   'footer_contact_email' => get_field('footer_contact_email'),
   'footer_address' => get_field('footer_address'),
   'footer_address_location' => get_field('footer_address_location')
