@@ -45,7 +45,11 @@
   justify-content: center;
 }
 
-h2 {
+.wysiwyg {
+  width: 40vw;
+}
+
+/* h2 {
   margin-bottom: 25px;
   position: relative;
 
@@ -58,7 +62,7 @@ h2 {
     left: calc(50% - 90px);
     border-bottom: gray solid 5px;
   }
-}
+} */
 
 /*
 .example-image-class{
