@@ -11,10 +11,11 @@ wp-content/backupwordpress-*/
 wp-content/managewp/backups/
 wp-content/advanced-cache.php
 wp-content/wp-cache-config.php
-wp-content/assets/
 sitemap.xml
 sitemap.xml.gz
 *.log
+wp-content/themes/carlise-advisors/assets/main.min.css
+wp-content/themes/carlise-advisors/assets/main.min.js
 
 # @TODO writable paths
 wp-content/cache/
