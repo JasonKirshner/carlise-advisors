@@ -31,7 +31,11 @@
   width: auto;
   display: flex;
   flex-flow: row wrap;
-  gap: 10px 4em;
+  gap: 10px 1em;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+.footer-wysiwyg {
+  width: auto !important;
 }

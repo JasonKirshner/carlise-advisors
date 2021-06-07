@@ -73,6 +73,11 @@
   flex-direction: row-reverse;
 }
 
+.reverse > .wysiwyg {
+  padding-left: 0;
+  padding-right: 25px;
+}
+
 /* h2 {
   margin-bottom: 25px;
   position: relative;
