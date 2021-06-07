@@ -9,30 +9,20 @@
         ?>
       </div>
       <div class="contact-info">
-        <div class="phone p3">
-          <div class="contact-heading p1">
-            <?= $footer_contact_us ?>
-          </div>
-          <div class="sales">
-            <?= $footer_contact_sales ?>
-          </div>
-          <div class="support">
-            <?= $footer_contact_support ?>
-          </div>
+        <div class='footer-wysiwyg'>
+          <?php
+          if (setted($footer_wysiwyg_left)) :
+            echo $footer_wysiwyg_left;
+          endif;
+          ?>
         </div>
-        <div class="address">
-          <div class="address-heading p1">
-            <?= $footer_address ?>
-          </div>
-          <div class="address-location p3">
-            <?= $footer_address_location ?><br>
-            placeholdertext jkshdkjfhjk hjksdhfjks<br>
-            placeholdertext sjkdhfjk hjskdhf jkhkjsd
-          </div>
+        <div class='footer-wysiwyg'>
+          <?php
+          if (setted($footer_wysiwyg_right)) :
+            echo $footer_wysiwyg_right;
+          endif;
+          ?>
         </div>
-      </div>
-      <div class="email p3">
-        <?= $footer_contact_email ?>
       </div>
     </div>
   </container>

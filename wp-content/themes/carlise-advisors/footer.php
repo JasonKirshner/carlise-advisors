@@ -15,12 +15,8 @@
 </div><!-- #content -->
 <?php the_module('footer', array(
   'footer_logo' => get_field('footer_logo'),
-  'footer_contact_us' => get_field('footer_contact_us'),
-  'footer_contact_sales' => get_field('footer_contact_sales'),
-  'footer_contact_support' => get_field('footer_contact_support'),
-  'footer_contact_email' => get_field('footer_contact_email'),
-  'footer_address' => get_field('footer_address'),
-  'footer_address_location' => get_field('footer_address_location')
+  'footer_wysiwyg_left' => get_field('footer_wysiwyg_left'),
+  'footer_wysiwyg_right' => get_field('footer_wysiwyg_right')
 )); ?>
 
 <?php

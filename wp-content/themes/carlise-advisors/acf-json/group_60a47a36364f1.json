@@ -701,10 +701,10 @@
             "mime_types": ""
         },
         {
-            "key": "field_60a86d3f923b6",
-            "label": "footer contact us",
-            "name": "footer_contact_us",
-            "type": "text",
+            "key": "field_60bd6f25f0f93",
+            "label": "footer wysiwyg left",
+            "name": "footer_wysiwyg_left",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -714,16 +714,16 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
         },
         {
-            "key": "field_60a86d4c923b7",
-            "label": "footer contact sales",
-            "name": "footer_contact_sales",
-            "type": "text",
+            "key": "field_60bd6f74f0f94",
+            "label": "footer wysiwyg right",
+            "name": "footer_wysiwyg_right",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -733,86 +733,10 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_60a86d99923b9",
-            "label": "footer contact support",
-            "name": "footer_contact_support",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_60a86db3923bb",
-            "label": "footer contact email",
-            "name": "footer_contact_email",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_60a86dbc923bc",
-            "label": "footer address",
-            "name": "footer_address",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_60a86dc7923bd",
-            "label": "footer address location",
-            "name": "footer_address_location",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
         },
         {
             "key": "field_60a86e17923be",
@@ -917,5 +841,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1623027560
+    "modified": 1623027663
 }

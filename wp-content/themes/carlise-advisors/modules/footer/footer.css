@@ -7,8 +7,9 @@
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 10px 20px;
   align-items: center;
 }
 
@@ -27,9 +28,14 @@
 }
 
 .contact-info {
+  width: auto;
   display: flex;
   flex-flow: row wrap;
-  gap: 20px;
-  justify-content: space-between;
-  align-items: left;
+  gap: 10px 80px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer-wysiwyg {
+  width: auto;
 }
