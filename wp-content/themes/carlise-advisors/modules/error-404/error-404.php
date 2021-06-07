@@ -1,22 +1,17 @@
 <section class="error-404<?= setted($class) ? " $class" : ""; ?>" data-module="error-404">
-
-<table class='404-grid-table'>
-    <tr><td class="error"> <h1>4 0 4 </h1>
-    <h3><?= $four_text ?> </h3> 
-    <div class="404-button"> <?php the_module('button', array(
-    'link' => home_url(), // required if $tag == 'a'
-    'value' => 'Home', // required 
-    ));?> 
+  <div class="container">
+    <div class="four-wrap">
+      <h1>4 0 4 </h1>
+      <h3><?= $four_text ?> </h3>
+      <div class="four-button"> <?php the_module('button', array(
+                                  'link' => home_url(), // required if $tag == 'a'
+                                  'value' => 'Home', // required 
+                                )); ?> </div>
     </div>
-    </td>
-    <td> <div class='404-image'>
-    <?php the_module('image', array('image' => $four_image)) ?> 
-    </div> 
-    </td>
-    </tr>
+    <div class='four-image'>
+      <?php the_module('image', array('image' => $four_image)) ?>
+    </div>
 
-  </table>
-
-
+  </div>
 
 </section>

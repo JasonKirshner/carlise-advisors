@@ -46,7 +46,16 @@
 }
 
 .wysiwyg {
+  padding-left: 25px;
   width: 40vw;
+}
+
+.background {
+  background-color: var(--cum);
+}
+
+.reverse {
+  flex-direction: row-reverse;
 }
 
 /* h2 {
