@@ -1,1 +1,56 @@
 /* styles for the hero module go in this file */
+
+.hero {
+  position: relative;
+  height: 80vh;
+  max-height: 750px;
+  display: flex;
+}
+
+.hero-image {
+  z-index: -1;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-title {
+  text-align: center;
+  color: var(--white);
+  margin: 0;
+  margin-right: 5rem;
+}
+
+.hero-form {
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--white-opaque);
+  padding: 3rem 4rem;
+  border-radius: 10px;
+
+  h2 {
+    display: none;
+  }
+
+  input, textarea {
+    @extend .input-label;
+
+    color: var(--cum-2);
+    width: 100%;
+    padding: 1rem 2rem;
+    border: 1px solid var(--black);
+
+    &::placeholder {
+      color: var(--cum-2);
+    }
+  }
+}
+
+.form-submit input {
+  @extend .button-reset;
+
+  @extend .button;
+}

@@ -1,9 +1,9 @@
 @import url("https://use.typekit.net/rbi7jwf.css");
 
-h1,
-h2,
-h3,
-p,
+.h1,
+.h2,
+.h3,
+.p,
 .p1,
 .p2,
 .p3,
@@ -12,7 +12,7 @@ p,
   font-family: var(--heading-font);
 }
 
-h1 {
+.h1 {
   font-size: 48px;
   line-height: 65px;
   font-weight: var(--bold);
@@ -23,7 +23,7 @@ h1 {
   }
 }
 
-h2 {
+.h2 {
   font-size: 43px;
   font-weight: var(--regualr);
 
@@ -33,7 +33,7 @@ h2 {
   }
 }
 
-h3 {
+.h3 {
   font-size: 32px;
   line-height: 30px;
   font-weight: var(--medium);
@@ -44,7 +44,7 @@ h3 {
   }
 }
 
-p {
+.p {
   font-size: 24px;
 
   @media (--md-max) {

@@ -2,9 +2,8 @@
 
 <table class='404-grid-table'>
     <tr><td class="error"> <h1>4 0 4 </h1>
-    <h3> Son You Done Fucked Up </h3> 
+    <h3><?= $four_text ?> </h3> 
     <div class="404-button"> <?php the_module('button', array(
-    'button' => $footer_button,
     'link' => home_url(), // required if $tag == 'a'
     'value' => 'Home', // required 
     ));?> 

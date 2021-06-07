@@ -1,30 +1,32 @@
 <section class="copy-grid" data-module="copy-grid">
-  <h2 class="module-name">Our Services</h2>
-
-  <div class="services-icon">
-    <?php 
-      if(setted($services_icon)):
+  <container class="container">
+    <div class="services-icon">
+      <?php
+      if (setted($services_icon)) :
         the_module('image', array('image' => $services_icon));
       endif;
-    ?>
-  </div>
-  <table class='copy-grid-table'>
-    <?php
-      if(setted($service)):
-        if(have_rows('service')):
-          $numServices = count($service);
-          echo "<style>.copy-grid-table{--numServices: " . $numServices . ";}</style>";
-          echo "<tr>";
-          while(have_rows('service')): the_row();
-            echo "<td class='subheading'><h3>" . get_sub_field('service_sub_heading') . "</h3></td>";
+      ?>
+    </div>
+    <h2 class="module-name h2"><?= $services_title ?></h2>
+    <div class="copy-grid-content">
+      <?php
+      if (setted($service)) :
+        if (have_rows('service')) :
+          while (have_rows('service')) : the_row();
+      ?>
+            <div class='content'>
+              <div class='subheading h3'>
+                <?= get_sub_field('service_sub_heading') ?>
+              </div>
+              <div class='blurb p'>
+                <?= get_sub_field('service_blurb') ?>
+              </div>
+            </div>
+      <?php
           endwhile;
-          echo "</tr><tr>";
-          while(have_rows('service')): the_row();
-            echo "<td class='blurb'><p>" . get_sub_field('service_blurb') . "</p></td>";
-          endwhile;
-          echo "</tr>";
         endif;
       endif;
-    ?>
-  </table>
+      ?>
+    </div>
+  </container>
 </section>

@@ -26,7 +26,7 @@
 <?php
 wp_footer();
 if (setted($_SERVER['PANTHEON_ENVIRONMENT']) && !in_array($_SERVER['PANTHEON_ENVIRONMENT'], array('test', 'live'))) {
-	the_module('build-version');
+  the_module('build-version');
 } ?>
 
 </body>

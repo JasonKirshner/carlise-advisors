@@ -1,7 +1,9 @@
-<section class="hero<?= setted($class) ? " $class" : ""; ?> placeholder" data-module="hero">
-  <?= $hero_title ?>
-  <!-- <div class="container hero_image">
-    <?php the_module('image', array('image' => $hero_image)) ?>
-  </div> -->
-  <h2 class="module-name">hero</h2>
+<section class="hero<?= setted($class) ? " $class" : ""; ?>" data-module="hero">
+  <?php the_module('image', array('image' => $hero_image, 'class' => 'hero-image')) ?>
+  <div class="hero-container container">
+    <h1 class="hero-title h1"><?= $hero_title ?></h1>
+    <div class="hero-form">
+      <?= do_shortcode('[CP_CALCULATED_FIELDS id="5"]'); ?>
+    </div>
+  </div>
 </section>

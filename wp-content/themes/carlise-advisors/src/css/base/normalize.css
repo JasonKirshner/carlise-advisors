@@ -24,14 +24,6 @@ html {
 
 body {
   font-size: 1.9rem; /* body font-size default is 19px */
-
-  &.logged-in:not(.hide-admin-bar) {
-    margin-top: 32px;
-
-    @media (max-width: 782px) {
-      margin-top: 46px;
-    }
-  }
 }
 
 #wpadminbar {
@@ -47,26 +39,6 @@ img {
   overflow-x: hidden;
   min-height: 66.1vh;
   position: relative;
-}
-
-.main-content {
-  &:not(.account-logged-in) {
-    margin-top: 80px;
-
-    @media (--mobile-menu) {
-      margin-top: 59px;
-    }
-  }
-
-  &.account-logged-in {
-    @media (--lg-max) {
-      margin-top: 84.39px;
-    }
-
-    @media (--sm-max) {
-      margin-top: 57px;
-    }
-  }
 }
 
 .container {
@@ -132,4 +104,13 @@ select {
 ul, ol {
   margin: 0;
   padding-inline-start: 20px;
+}
+
+.button-reset {
+  appearance: none;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
 }
