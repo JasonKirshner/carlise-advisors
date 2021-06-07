@@ -14,9 +14,9 @@ the_module('image-copy', array(
   'wysiwyg' => get_field('project_wysiwyg'),
 ));
 the_module('copy-grid', array(
-  'services_icon' => get_field('services_icon'),
-  'services_title' => get_field('services_title'),
-  'service' => get_field('service')
+  'icon' => get_field('services_icon'),
+  'title' => get_field('services_title'),
+  'blurbs' => get_field('service')
 ));
 the_module('image-copy', array(
   'icon' => get_field('prepare_icon'),

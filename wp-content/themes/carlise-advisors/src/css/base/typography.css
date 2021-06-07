@@ -32,7 +32,7 @@ p {
 
 .h2 {
   font-size: 43px;
-  font-weight: var(--regualr);
+  font-weight: var(--regular);
 
   @media (--md-max) {
     font-size: 25px;

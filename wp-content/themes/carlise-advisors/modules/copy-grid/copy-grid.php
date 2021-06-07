@@ -1,32 +1,36 @@
-<section class="copy-grid" data-module="copy-grid">
+<section class="copy-grid section-padding" data-module="copy-grid">
   <container class="container">
-    <div class="services-icon">
-      <?php
-      if (setted($services_icon)) :
-        the_module('image', array('image' => $services_icon));
-      endif;
-      ?>
-    </div>
-    <h2 class="module-name h2"><?= $services_title ?></h2>
-    <div class="copy-grid-content">
-      <?php
-      if (setted($service)) :
-        if (have_rows('service')) :
-          while (have_rows('service')) : the_row();
-      ?>
+    <div class="copy-grid-container">
+      <div class="copy-grid-icon">
+        <?php
+        if (setted($icon)) :
+          the_module('image', array('image' => $icon));
+        endif;
+        ?>
+      </div>
+      <div class="module-name h2">
+        <?= $title ?>
+      </div>
+      <div class="copy-grid-content">
+        <?php
+        if (setted($blurbs)) :
+          $subheading = array_keys($blurbs[0])[0];
+          $blurb = array_keys($blurbs[0])[1];
+          foreach ($blurbs as $index => $content) :
+        ?>
             <div class='content'>
               <div class='subheading h3'>
-                <?= get_sub_field('service_sub_heading') ?>
+                <?= $blurbs[$index][$subheading] ?>
               </div>
               <div class='blurb p'>
-                <?= get_sub_field('service_blurb') ?>
+                <?= $blurbs[$index][$blurb] ?>
               </div>
             </div>
-      <?php
-          endwhile;
+        <?php
+          endforeach;
         endif;
-      endif;
-      ?>
+        ?>
+      </div>
     </div>
   </container>
 </section>

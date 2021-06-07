@@ -467,10 +467,10 @@
             "mime_types": ""
         },
         {
-            "key": "field_60a56280131ae",
-            "label": "call center subtitle",
-            "name": "call_center_subtitle",
-            "type": "text",
+            "key": "field_60be48dab00ba",
+            "label": "call center wysiwyg",
+            "name": "call_center_wysiwyg",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -480,29 +480,10 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_60a5628c131af",
-            "label": "call center blurb",
-            "name": "call_center_blurb",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         },
         {
             "key": "field_60a562a9131b1",
@@ -643,9 +624,9 @@
         },
         {
             "key": "field_60a86cff923b3",
-            "label": "footer button title",
-            "name": "footer_button_title",
-            "type": "text",
+            "label": "footer button",
+            "name": "footer_button",
+            "type": "button_group",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -654,11 +635,11 @@
                 "class": "",
                 "id": ""
             },
+            "choices": [],
+            "allow_null": 0,
             "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "layout": "horizontal",
+            "return_format": "value"
         },
         {
             "key": "field_60a86d1d923b4",
@@ -841,5 +822,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1623027663
+    "modified": 1623083250
 }

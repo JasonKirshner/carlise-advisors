@@ -3,12 +3,12 @@
 
 .copy-grid {
   background-color: var(--cum);
-  padding: 80px 0 180px 0;
 }
 
 .module-name {
   text-align: center;
   margin-bottom: 0;
+  padding-top: 20px;
   padding-bottom: 70px;
 
   &::after {
@@ -21,10 +21,8 @@
   }
 }
 
-.services-icon {
+.copy-grid-icon {
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
   width: 100%;
   max-width: 78px;
 
@@ -33,6 +31,12 @@
     display: block;
     padding-bottom: calc(83 / 78 * 100%);
   }
+}
+
+.copy-grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .copy-grid-content {
@@ -49,10 +53,4 @@
 
 .subheading {
   padding-bottom: 16px;
-}
-
-.blurb {
-  @media (--md-max) {
-    font-size: 18px;
-  }
 }
