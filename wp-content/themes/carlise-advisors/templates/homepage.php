@@ -38,8 +38,8 @@ the_module('image-copy', array(
   'wysiwyg' => get_field('upgrade_wysiwyg'), 
 ));
 the_module('footer-cta', array(
-  'footer_cta_title' => get_field('footer_cta_title')
-  //'footer_button' => get_field('footer_button')
+  'footer_cta_title' => get_field('footer_cta_title'),
+  'footer_button_title' => get_field('footer_button_title')
   
 ));
 

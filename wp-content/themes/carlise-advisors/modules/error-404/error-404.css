@@ -2,9 +2,34 @@
 
 .error-404 {
   background-color: var(--lavender);
-  padding: 10px 0 40px 0;
+  display: flex;
 }
 
 .error {
   text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.four-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.four-image {
+  position: relative;
+  width: 100%;
+  max-width: 505px;
+  border-radius: 76px;
+
+  &::after {
+    content: '';
+    display: block;
+    padding-bottom: calc(505 / 725 * 100%);
+  }
 }
