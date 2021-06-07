@@ -28,7 +28,7 @@
 
 .contact-info {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
   gap: 20px;
   justify-content: space-between;
   align-items: left;
