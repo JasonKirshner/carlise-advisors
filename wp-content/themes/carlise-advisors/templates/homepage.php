@@ -24,12 +24,13 @@ the_module('image-copy', array(
   'image' => get_field('prepare_image'), 
   'wysiwyg' => get_field('prepare_wysiwyg'), 
 ));
-the_module('upgrade-tech', array(
-  'upgrade_icon' => get_field('upgrade_icon'), 
-  'upgrade_title' => get_field('upgrade_title'), 
-  'upgrade_image' => get_field('upgrade_image'), 
-  'upgrade_subtitle' => get_field('upgrade_subtitle'), 
-  'upgrade_blurb' => get_field('upgrade_blurb')
+the_module('image-copy', array(
+  'icon' => get_field('call_center_icon'), 
+  'title' => get_field('call_center_title'), 
+  'image' => get_field('call_center_image'), 
+  'wysiwyg' => get_field('call_center_wysiwyg'), 
+  'background' => 'background',
+  'direction' => 'reverse',
 ));
 the_module('image-copy', array( 
   'icon' => get_field('upgrade_icon'), 
