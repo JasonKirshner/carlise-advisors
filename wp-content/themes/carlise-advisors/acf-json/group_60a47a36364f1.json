@@ -643,9 +643,9 @@
         },
         {
             "key": "field_60a86cff923b3",
-            "label": "footer button",
-            "name": "footer_button",
-            "type": "button_group",
+            "label": "footer button title",
+            "name": "footer_button_title",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -654,11 +654,11 @@
                 "class": "",
                 "id": ""
             },
-            "choices": [],
-            "allow_null": 0,
             "default_value": "",
-            "layout": "horizontal",
-            "return_format": "value"
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_60a86d1d923b4",
