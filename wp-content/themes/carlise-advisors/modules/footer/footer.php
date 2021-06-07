@@ -9,14 +9,14 @@
         ?>
       </div>
       <div class="contact-info">
-        <div class='wysiwyg'>
+        <div class='footer-wysiwyg'>
           <?php
           if (setted($footer_wysiwyg_left)) :
             echo $footer_wysiwyg_left;
           endif;
           ?>
         </div>
-        <div class='wysiwyg'>
+        <div class='footer-wysiwyg'>
           <?php
           if (setted($footer_wysiwyg_right)) :
             echo $footer_wysiwyg_right;
