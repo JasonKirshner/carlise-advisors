@@ -1,4 +1,4 @@
-<section class='image-copy section-padding <?= $background ?>' data-module='image-copy'>
+<section class='image-copy section-padding <?= $background ?><?= setted($class) ? " $class" : ''; ?>' data-module='image-copy'>
   <container class='container image-copy-container'>
     <div class="image-copy-icon">
       <?php

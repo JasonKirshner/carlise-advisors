@@ -20,7 +20,13 @@
 <body <?php body_class(); ?>>
 	<div id="page" class="site">
 		<header id="masthead" class="site-header">
-			<?php the_module('navigation') ?>
+			<?php the_module('navigation', array(
+				'nav_links' => get_field('nav_links'),
+				'header_logo' => get_field('header_logo'),
+				'what_we_do' => get_field('what_we_do'),
+				'about_us' => get_field('about_us'),
+				'contact' => get_field('contact')
+			)) ?>
 		</header><!-- #masthead -->
 
 		<div class="main-content">

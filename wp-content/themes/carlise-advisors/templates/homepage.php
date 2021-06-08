@@ -8,23 +8,27 @@ get_header();
 //                         key  <pass>   value
 the_module('hero', array('hero_title' => get_field('hero_title'), 'hero_image' => get_field('hero_image')));
 the_module('image-copy', array(
+  'class' => 'projects',
   'icon' => get_field('project_icon'),
   'title' => get_field('project_title'),
   'image' => get_field('project_image'),
   'wysiwyg' => get_field('project_wysiwyg'),
 ));
 the_module('copy-grid', array(
+  'class' => 'services',
   'icon' => get_field('services_icon'),
   'title' => get_field('services_title'),
   'blurbs' => get_field('service')
 ));
 the_module('image-copy', array(
+  'class' => 'prepare',
   'icon' => get_field('prepare_icon'),
   'title' => get_field('prepare_title'),
   'image' => get_field('prepare_image'),
   'wysiwyg' => get_field('prepare_wysiwyg'),
 ));
 the_module('image-copy', array(
+  'class' => 'upgrade',
   'icon' => get_field('call_center_icon'),
   'title' => get_field('call_center_title'),
   'image' => get_field('call_center_image'),
@@ -33,6 +37,7 @@ the_module('image-copy', array(
   'direction' => 'reverse',
 ));
 the_module('image-copy', array(
+  'class' => 'call-center',
   'icon' => get_field('upgrade_icon'),
   'title' => get_field('upgrade_title'),
   'image' => get_field('upgrade_image'),

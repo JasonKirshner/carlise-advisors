@@ -1,4 +1,4 @@
-<section class="copy-grid section-padding" data-module="copy-grid">
+<section class="copy-grid section-padding <?= setted($class) ? " $class" : ''; ?>" data-module="copy-grid">
   <container class="container">
     <div class="copy-grid-container">
       <div class="copy-grid-icon">
