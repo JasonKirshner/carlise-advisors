@@ -114,3 +114,13 @@ ul, ol {
   cursor: pointer;
   padding: 0;
 }
+
+.section-padding {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @media (--md-max) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}

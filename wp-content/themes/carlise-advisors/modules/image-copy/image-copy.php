@@ -1,16 +1,14 @@
-<section class='image-copy<?= setted($class) ? " $class" : ''; ?>' data-module='image-copy'>
-    <div class='image-copy-container'>
-      <div class='image-copy__icon'>
-        <?php the_module('image', array('image' => $icon)); ?>
+<section class='image-copy section-padding <?= $background ?><?= setted($class) ? " $class" : ''; ?> ' data-module='image-copy'>
+  <div class='image-copy-container'>
+    <img src=<?= get_image_data($icon)[0] ?> alt="<?= get_image_data($icon)[1]; ?>">
+    <div class="module-name h2"><?= $title ?></div>
+    <div class='image-copy-sub-container <?= $direction ?>'>
+      <div class='image-copy__image'>
+        <?php the_module('image', array('image' => $image)); ?>
       </div>
-        <h2><?= $title ?></h2>
-      <div class='image-copy-sub-container'>
-        <div class='image-copy__image'>
-          <?php the_module('image', array('image' => $image)); ?>
-        </div>
-        <div class='wysiwyg'>
-          <?= $wysiwyg ?>
-        </div>
+      <div class='wysiwyg'>
+        <?= $wysiwyg ?>
       </div>
     </div>
+  </div>
 </section>
