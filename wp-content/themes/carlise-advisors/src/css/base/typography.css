@@ -20,76 +20,76 @@ p {
 }
 
 .h1 {
-  font-size: 48px;
+  font-size: 38px;
   line-height: 65px;
   font-weight: var(--bold);
 
   @media (--md-max) {
-    font-size: 30px;
+    font-size: 24px;
     line-height: 35px;
   }
 }
 
 .h2 {
-  font-size: 43px;
+  font-size: 34px;
   font-weight: var(--regular);
 
   @media (--md-max) {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 29px;
   }
 }
 
 .h3 {
-  font-size: 32px;
+  font-size: 26px;
   line-height: 30px;
   font-weight: var(--medium);
 
   @media (--md-max) {
-    font-size: 22px;
+    font-size: 18px;
     line-height: 25px;
   }
 }
 
 .p {
-  font-size: 24px;
+  font-size: 19px;
 
   @media (--md-max) {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 
 .p1 {
-  font-size: 24px;
+  font-size: 19px;
   font-weight: var(--medium);
 
   @media (--md-max) {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 
 .p2 {
-  font-size: 20px;
+  font-size: 16px;
 
   @media (--md-max) {
-    font-size: 16px;
+    font-size: 13px;
   }
 }
 
 .p3 {
-  font-size: 16px;
+  font-size: 13px;
 
   @media (--md-max) {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
 .input-error {
-  font-size: 12px;
+  font-size: 10px;
   color: var(--red);
 }
 
 .input-label {
-  font-size: 18px;
+  font-size: 14px;
   font-style: italic;
 }

@@ -6,6 +6,6 @@ if ($tag == 'a' && empty($link)) return;
 ?>
 <?php if (!empty($value)) : ?>
   <<?= $tag; ?> class="button button--<?= $tag; ?><?= $class; ?>" <?= $link && $tag == 'a' ? "href='$link'" : ''; ?> <?= $target ? "target=\"$target\"" : ''; ?> <?= $data ? $data : ""; ?>>
-    <span class="button__value"><?= $value; ?></span>
+    <span class="button__value p2"><?= $value; ?></span>
   </<?= $tag; ?>>
 <?php endif; ?>
