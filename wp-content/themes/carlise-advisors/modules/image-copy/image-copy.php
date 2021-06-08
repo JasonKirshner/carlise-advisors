@@ -1,4 +1,4 @@
-<section class='image-copy<?= setted($class) ? ' $class' : ''; ?>' data-module='image-copy'>
+<section class='image-copy<?= setted($class) ? " $class" : ''; ?>' data-module='image-copy'>
     <div class='image-copy-container'>
       <div class='image-copy__icon'>
         <?php the_module('image', array('image' => $icon)); ?>

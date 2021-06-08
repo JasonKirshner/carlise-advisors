@@ -5,13 +5,17 @@
 import scrollToElement from 'scroll-to-element'
 
 const navigation = (el) => {
-  const navLink = el.querySelectorAll('links')
-  navLink.forEach(element => {
-    element.addEventListener('click', () => {
-      const link = document.getElementById(element.getAttribute('data-link'))
-      scrollToElement(link, 'smooth')
-    })
+  const navLink = el.querySelectorAll('.link')
+  console.log(navLink)
+  Array.from(navLink).forEach(element => {
+    element.addEventListener('click', function () {
+      scrollToElement(this.value, { offset: -el.offsetHeight })
+      console.log(this.value)
+    }
+    )
   })
+  const headerimage = el.querySelectorAll('.header_logo')
+  headerimage[0].addEventListener('click', function () { scrollToElement('.hero-container', { offset: -el.offsetHeight }) })
   console.warn('initializing navigation module')
 }
 

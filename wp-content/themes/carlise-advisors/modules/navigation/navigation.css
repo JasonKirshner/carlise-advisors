@@ -2,24 +2,39 @@
 
 .navigation {
   display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.navigation__container {
+  width: 100%;
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
+  position: fixed;
+  align-items: center;
+  opacity: 0.9;
+  background-color: #fff;
+  height: 103px;
 }
 
 .header_logo {
+  cursor: pointer;
   position: relative;
-  width: 100%;
   max-width: 252px;
-
-  &::after {
-    content: "";
-    display: block;
-    padding-bottom: calc(83 / 252 * 100%);
-  }
+  width: 100%;
 }
 
-.links {
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
+.link {
+  cursor: pointer;
+  width: 175px;
+  height: 24px;
+  border: none;
+  opacity: 0.9;
+  font-size: 24px;
+  background-color: #fff;
+
+  @media (--lg-max) {
+    width: 100px;
+  }
 }
