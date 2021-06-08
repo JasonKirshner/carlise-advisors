@@ -1,4 +1,4 @@
-<section class="hero<?= setted($class) ? " $class" : ""; ?>" data-module="hero">
+<section class="hero<?= setted($class) ? " $class" : ""; ?> section-padding" data-module="hero">
   <?php the_module('image', array('image' => $hero_image, 'class' => 'hero-image')) ?>
   <div class="hero-container container">
     <h1 class="hero-title h1"><?= $hero_title ?></h1>
