@@ -2,17 +2,9 @@
 
 /* image copy sections */
 
-.image-copy__icon {
+.image-copy-icon {
   position: relative;
-  width: 100%;
-  max-width: 80px;
-  justify-self: center;
-
-  &::after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-  }
+  width: 100px;
 }
 
 .module-name {
@@ -35,13 +27,8 @@
   position: relative;
   width: 100%;
   max-width: 590px;
+  min-width: 325px;
   justify-self: center;
-
-  &::after {
-    content: "";
-    display: block;
-    padding-bottom: calc(363 / 590 * 100%);
-  }
 }
 
 .image-copy-container {
@@ -58,11 +45,21 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  @media (--lg-max) {
+    flex-direction: column;
+    gap: 50px 0;
+  }
 }
 
 .wysiwyg {
-  padding-left: 25px;
+  padding-left: 2em;
   width: 40vw;
+
+  @media (--lg-max) {
+    padding-left: 0;
+    width: 80%;
+  }
 }
 
 .background {
@@ -71,37 +68,19 @@
 
 .reverse {
   flex-direction: row-reverse;
+
+  @media (--lg-max) {
+    flex-direction: column;
+    gap: 50px 0;
+  }
 }
 
 .reverse > .wysiwyg {
   padding-left: 0;
-  padding-right: 25px;
-}
+  padding-right: 2em;
 
-/* h2 {
-  margin-bottom: 25px;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    height: 1px;
-    width: 180px;
-    left: calc(50% - 90px);
-    border-bottom: gray solid 5px;
+  @media (--lg-max) {
+    padding-right: 0;
+    width: 80%;
   }
-} */
-
-/*
-.example-image-class{
-type in 'pr' and hit enter -> position: relative;
-add these lines:   width: 100%;
-                   max-width: 591px; == width of the image
-type in 'ar' ->   &::after {
-                    content: "";
-                    display: block;
-                    padding-bottom: calc(384 / 591 * 100%);  == update with dimensions of image
-                  }
 }
-*/

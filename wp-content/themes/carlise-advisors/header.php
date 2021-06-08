@@ -19,8 +19,6 @@
 
 <body <?php body_class(); ?>>
 	<div id="page" class="site">
-		<?php the_module('skip-content'); ?>
-
 		<header id="masthead" class="site-header">
 			<?php the_module('navigation') ?>
 		</header><!-- #masthead -->

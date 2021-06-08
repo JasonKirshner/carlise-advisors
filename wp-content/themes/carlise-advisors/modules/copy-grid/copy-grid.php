@@ -4,7 +4,7 @@
       <div class="copy-grid-icon">
         <?php
         if (setted($icon)) :
-          the_module('image', array('image' => $icon));
+          the_module('image', array('class' => 'image--relative', 'image' => $icon));
         endif;
         ?>
       </div>

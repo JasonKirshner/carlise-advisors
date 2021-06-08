@@ -23,14 +23,7 @@
 
 .copy-grid-icon {
   position: relative;
-  width: 100%;
-  max-width: 78px;
-
-  &::after {
-    content: "";
-    display: block;
-    padding-bottom: calc(83 / 78 * 100%);
-  }
+  width: 100px;
 }
 
 .copy-grid-container {
