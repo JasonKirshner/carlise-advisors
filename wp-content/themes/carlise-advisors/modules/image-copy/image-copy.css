@@ -12,15 +12,6 @@
   margin-bottom: 0;
   padding-top: 20px;
   padding-bottom: 70px;
-
-  &::after {
-    content: "";
-    display: block;
-    margin: 0 auto;
-    width: 200px;
-    padding-top: 12px;
-    border-bottom: 4px solid var(--plum);
-  }
 }
 
 .image-copy__image {

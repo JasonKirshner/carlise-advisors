@@ -10,15 +10,6 @@
   margin-bottom: 0;
   padding-top: 20px;
   padding-bottom: 70px;
-
-  &::after {
-    content: "";
-    display: block;
-    margin: 0 auto;
-    width: 200px;
-    padding-top: 12px;
-    border-bottom: 4px solid var(--plum);
-  }
 }
 
 .copy-grid-icon {
@@ -35,13 +26,16 @@
 .copy-grid-content {
   display: flex;
   flex-flow: row wrap;
-  align-items: baseline;
+  align-items: stretch;
   justify-content: space-evenly;
   gap: 70px 60px;
 }
 
 .content {
   flex: 0 1 270px;
+  background-color: var(--lavender);
+  padding: 3rem;
+  border-radius: 10px;
 }
 
 .subheading {
