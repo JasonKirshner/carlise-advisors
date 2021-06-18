@@ -1,5 +1,5 @@
 <section class="error-404<?= setted($class) ? " $class" : ""; ?>" data-module="error-404">
-  <div class="container">
+  <div class="container four_container">
     <div class="four-wrap">
       <h1 class="h1">4 0 4 </h1>
       <h3 class="h3"><?= $four_text ?> </h3>
