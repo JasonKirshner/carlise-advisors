@@ -25,6 +25,9 @@
   --container-width: 1328px;
   --container-padding: 25px;
 
+  /* Navigation */
+  --nav-height: 103px;
+
   /* Transitions */
   --transition-timing: 0.25s;
   --transition-timing-slow: 1.2s;
