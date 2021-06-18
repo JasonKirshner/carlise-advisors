@@ -5,6 +5,7 @@
   height: 80vh;
   min-height: 825px;
   display: flex;
+  margin-top: var(--nav-height);
 
   @media (--lg-max) {
     max-height: initial;
@@ -42,6 +43,7 @@
   text-align: center;
   color: var(--white);
   margin: 0;
+  flex-basis: 100%;
 
   @media (--lg) {
     margin-right: 8rem;
@@ -49,11 +51,11 @@
 }
 
 .hero-form {
-  width: 100%;
   max-width: 500px;
   background-color: var(--white-opaque);
   padding: 3rem 4rem;
   border-radius: 10px;
+  flex-basis: 100%;
 
   @media (--lg-max) {
     max-width: initial;
@@ -98,7 +100,7 @@
   .fields:not(.form-submit) input, textarea {
     @extend .input-label;
 
-    color: var(--cum-2);
+    color: var(--black);
     width: 100%;
     padding: 1rem 2rem;
     border: 1px solid var(--black);
