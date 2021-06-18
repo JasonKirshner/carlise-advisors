@@ -21,38 +21,41 @@ p {
 
 .h1 {
   font-size: 38px;
-  line-height: 65px;
+  margin-bottom: 0.25em;
+  line-height: normal;
   font-weight: var(--bold);
 
   @media (--md-max) {
     font-size: 24px;
-    line-height: 35px;
   }
 }
 
 .h2 {
   font-size: 34px;
+  line-height: normal;
   font-weight: var(--regular);
 
   @media (--md-max) {
     font-size: 20px;
-    line-height: 29px;
+    line-height: normal;
   }
 }
 
 .h3 {
   font-size: 26px;
-  line-height: 30px;
+  line-height: normal;
   font-weight: var(--medium);
 
   @media (--md-max) {
     font-size: 18px;
-    line-height: 25px;
+    line-height: normal;
   }
 }
 
 .p {
   font-size: 19px;
+  margin-top: 0.15em;
+  margin-bottom: 0.35em;
 
   @media (--md-max) {
     font-size: 14px;
