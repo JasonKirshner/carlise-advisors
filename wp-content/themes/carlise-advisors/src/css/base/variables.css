@@ -28,6 +28,9 @@
   /* Navigation */
   --nav-height: 103px;
 
+  /* Footer */
+  --footer-height: 182px;
+
   /* Transitions */
   --transition-timing: 0.25s;
   --transition-timing-slow: 1.2s;
