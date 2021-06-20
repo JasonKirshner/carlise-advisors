@@ -48,6 +48,10 @@
   @media (--lg) {
     margin-right: 8rem;
   }
+
+  @media (--lg-max) {
+    max-width: 500px;
+  }
 }
 
 .hero-form {
@@ -63,6 +67,10 @@
     padding: 1.5rem 2rem;
   }
 
+  @media (--md-max) {
+    width: 100%;
+  }
+
   #field.fform {
     padding: 0;
 
@@ -73,7 +81,7 @@
       margin-bottom: 2rem;
 
       @media (--lg-max) {
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
       }
     }
   }
