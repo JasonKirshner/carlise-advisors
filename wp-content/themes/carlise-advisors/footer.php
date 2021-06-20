@@ -14,9 +14,9 @@
 
 </div><!-- #content -->
 <?php the_module('footer', array(
-  'footer_logo' => get_field('footer_logo'),
-  'footer_wysiwyg_left' => get_field('footer_wysiwyg_left'),
-  'footer_wysiwyg_right' => get_field('footer_wysiwyg_right')
+  'footer_logo' => get_field('footer_logo', 7),
+  'footer_wysiwyg_left' => get_field('footer_wysiwyg_left', 7),
+  'footer_wysiwyg_right' => get_field('footer_wysiwyg_right', 7)
 )); ?>
 
 <?php
