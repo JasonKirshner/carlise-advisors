@@ -14,7 +14,7 @@
 
 .copy-grid-icon {
   position: relative;
-  width: 100px;
+  width: 60px;
 }
 
 .copy-grid-container {
@@ -25,19 +25,47 @@
 
 .copy-grid-content {
   display: flex;
-  flex-flow: row wrap;
-  align-items: stretch;
-  justify-content: space-evenly;
-  gap: 70px 60px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (--xl-max) {
+    max-width: 800px;
+    margin: 0 auto;
+  }
 }
 
 .content {
-  flex: 0 1 270px;
+  flex-basis: calc(100% / 4 - 40px);
   background-color: var(--lavender);
   padding: 3rem;
   border-radius: 10px;
+
+  @media (--xl-max) {
+    flex-basis: calc(100% / 2 - 10px);
+  }
+
+  @media (--sm-max) {
+    flex-basis: 100%;
+  }
+
+  &:not(:first-child) {
+    @media (--sm-max) {
+      margin-top: 20px;
+    }
+  }
+
+  &:nth-child(n + 3) {
+    @media (--xl-max) and (--sm) {
+      margin-top: 20px;
+    }
+  }
 }
 
 .subheading {
-  padding-bottom: 16px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.blurb {
+  text-align: center;
 }
