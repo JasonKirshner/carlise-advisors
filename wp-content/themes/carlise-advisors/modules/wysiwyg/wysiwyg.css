@@ -1,1 +1,256 @@
 /* styles for wysiwyg */
+
+.wysiwyg {
+  * {
+    margin: 0;
+  }
+
+  > *:not(:first-child) {
+    margin-top: 2rem;
+  }
+
+  &--alt * {
+    color: var(--white);
+  }
+
+  p:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+
+  ul {
+    padding-left: 2rem;
+    margin-top: 10px;
+  }
+
+  h1 {
+    @extend .h1;
+  }
+
+  h2 {
+    @extend .h2;
+  }
+
+  h3 {
+    @extend .h3;
+  }
+
+  p {
+    @extend .p;
+  }
+
+  li {
+    @extend .b2;
+  }
+
+  &--no-margin {
+    p,h1,h2,h3,h4,h5,h6,a {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+
+  &--legal {
+    padding-bottom: 12rem;
+  }
+
+  a {
+    color: var(--light-blue);
+    text-decoration: underline;
+    font-size: inherit;
+  }
+
+  /**
+    * Imported image styles from wordpress
+    * @see https://codex.wordpress.org/Styling_Images_in_Posts_and_Pages
+    */
+
+  img.alignright {
+    float: right;
+    margin: 0 0 1em 1em;
+  }
+
+  img.alignleft {
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+
+  img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  a img.alignright {
+    float: right;
+    margin: 0 0 1em 1em;
+  }
+
+  a img.alignleft {
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+
+  a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 45px 0 0 -20px;
+    max-width: 800px;
+
+    .wpcf7-list-item {
+      margin-left: 0;
+    }
+
+    &.woocommerce-checkout {
+      margin-left: 0;
+    }
+  }
+
+  /* responsive images to not break the page content if the image is top wide */
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+
+    &.border-radius-none {
+      border-radius: 0;
+    }
+  }
+
+  &.container {
+    padding-top: 14rem;
+    padding-bottom: 12rem;
+  }
+}
+
+p:not(:last-of-type) {
+  .wysiwyg--post-content & {
+    margin-bottom: 20px;
+  }
+}
+
+.wysiwyg.h1 p {
+  @extend .h1;
+}
+
+.wysiwyg.h2 p {
+  @extend .h2;
+}
+
+.wysiwyg.h3 p {
+  @extend .h3;
+}
+
+.wysiwyg.h4 p {
+  @extend .h3;
+}
+
+.wysiwyg.h5 p {
+  @extend .h3;
+}
+
+.wysiwyg.p p {
+  @extend .b2;
+}
+
+.wysiwyg.b2 p {
+  @extend .b2;
+}
+
+.wysiwyg.b1 p {
+  @extend .b1;
+}
+
+.wysiwyg.b1--small {
+  p,
+  li,
+  a {
+    font-size: 16px;
+    line-height: 20px;
+
+    @extend .b1;
+  }
+}
+
+.wysiwyg.b1--x-small {
+  p,
+  li,
+  a {
+    font-size: 10px;
+    line-height: 13px;
+
+    @extend .b1;
+  }
+}
+
+.wysiwyg.b1--small-md-max {
+  p,
+  li,
+  a {
+    font-size: 14px;
+    line-height: 19px;
+
+    @media (--lg) {
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+}
+
+.wysiwyg.b1--bold p {
+  font-weight: var(--bold);
+
+  @extend .b1;
+}
+
+.wysiwyg.input-label p {
+  @extend .input-label;
+}
+
+.wysiwyg.b1.b1--small.b1--light {
+  p, a {
+    @extend .b1;
+
+    font-size: 16px;
+    font-weight: var(--light);
+  }
+}
+
+.wysiwyg.b1.b1--small.b1--small-md-max {
+  p, a {
+    @media (--md-max) {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+}
+
+.wysiwyg--event-info.b1--small {
+  p {
+    font-size: 14px;
+    line-height: 19px;
+
+    @media (--lg) {
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+}
+
+.wysiwyg.b2--large p {
+  font-family: var(--heading-font);
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: var(--medium);
+
+  @media (--md) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
