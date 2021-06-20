@@ -3,7 +3,7 @@
     <div class="footer__image">
       <?php
       if (setted($footer_logo)) :
-        the_module('image', array('image' => $footer_logo));
+        the_module('image', array('class' => 'image--relative', 'image' => $footer_logo));
       endif;
       ?>
     </div>
