@@ -10,9 +10,9 @@
     <div class="module-name h2"><?= $title ?></div>
     <div class='image-copy-sub-container <?= $direction ?>'>
       <div class='image-copy__image'>
-        <?php the_module('image', array('class' => 'image--relative', 'image' => $image)); ?>
+        <?php the_module('image', array('image' => $image)); ?>
       </div>
-      <?php the_module('wysiwyg', array('content' => $wysiwyg)); ?>
+      <?php the_module('wysiwyg', array('class' => 'image-copy__wysiwyg', 'content' => $wysiwyg)); ?>
     </div>
   </container>
 </section>
