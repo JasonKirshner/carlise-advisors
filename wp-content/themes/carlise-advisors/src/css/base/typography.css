@@ -54,8 +54,6 @@ p {
 
 .p {
   font-size: 19px;
-  margin-top: 0.15em;
-  margin-bottom: 0.35em;
 
   @media (--md-max) {
     font-size: 14px;
