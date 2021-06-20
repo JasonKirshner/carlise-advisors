@@ -13,28 +13,26 @@
   justify-content: space-around;
   position: fixed;
   align-items: center;
-  opacity: 0.9;
   background-color: #fff;
   height: 103px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 }
 
 .header_logo {
   cursor: pointer;
   position: relative;
-  max-width: 252px;
+  max-width: 200px;
   width: 100%;
 }
 
 .link {
   cursor: pointer;
-  width: 175px;
-  height: 24px;
-  border: none;
   opacity: 0.9;
-  font-size: 24px;
-  background-color: #fff;
+  color: var(--black);
+  display: inline-block;
+  text-decoration: none;
 
-  @media (--lg-max) {
-    width: 100px;
+  &:not(:last-child) {
+    margin-right: 2rem;
   }
 }
