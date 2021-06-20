@@ -3,7 +3,9 @@
 .error-404 {
   background-color: var(--cum);
   display: flex;
-  min-height: 100vh;
+  margin-top: var(--nav-height);
+  min-height: calc(100vh - var(--nav-height) - var(--footer-height));
+  padding: 40px 0;
 }
 
 .error {
@@ -15,6 +17,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  @media (--lg-max) {
+    flex-direction: column;
+  }
 }
 
 .four-wrap {
@@ -35,4 +41,12 @@
     display: block;
     padding-bottom: calc(505 / 725 * 100%);
   }
+
+  @media (--lg-max) {
+    margin-top: 20px;
+  }
+}
+
+.four-button {
+  margin-top: 20px;
 }
